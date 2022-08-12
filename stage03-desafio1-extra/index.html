@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | Avaliação de Mentoria</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="img1.svg" alt="Balão de diálogo com avaliação três de cinco estrelas">
+    </header>
+
+    <form id="rating-form">
+        <h2>Informações pessoais</h2>
+        <div class="page">
+            <fieldset>
+                <div class="name-wrapper">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="email">Email <span>(digite um email válido)</span></label>
+                    <input type="email" id="email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do mentor</legend>
+
+                <div class="select-wrapper">
+                    <label for="mentor-name">Selecione quem foi o seu mentor</label>
+                    <select id="mentor-name" required>
+                        <option selected disabled></option>
+                        <option value="name1">Nome A</option>
+                        <option value="name2">Nome B</option>
+                        <option value="name3">Nome C</option>
+                    </select>
+                </div>
+                
+                <div class="feedback-wrapper">
+                    <label for="feedback">Feedback sobre o mentor</label>
+                    <textarea id="feedback" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="doubts">
+                    <label for="doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agendando próxima mentoria</legend>
+
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="data">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="begin">Das</label>
+                        <input type="time" id="begin">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="end">Até</label>
+                        <input type="time" id="end">
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" class="button" form="rating-form" value="Salvar">
+        </div>
+    </form>
+</body>
+</html>

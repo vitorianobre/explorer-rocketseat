@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #293241;
+    --bg-color: #BFD7E4;
+    --contrast-color: #F67669;
+    --light-color: #FFFFFF;
+
+    --fs-title: 'Staatliches', cursive;
+    --fs-form: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+
+    font-family: var(--fs-form);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 465px;
+    background: var(--dark-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    margin: 107px auto 32px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    color: var(--light-color);
+}
+
+header h1 {
+    font-family: var(--fs-title);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+form h2 {
+    width: 750px;
+
+    font-family: var(--fs-title);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--light-color);
+
+    text-align: center;
+
+    background-color: var(--contrast-color);
+    padding: 50px 0;
+    margin: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.page {
+    width: 750px;
+    margin: 0 auto 100px;
+    padding: 30px 64px 64px 64px;
+    background: var(--light-color);
+
+    border-radius: 0 0 20px 20px;
+}
+
+fieldset {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    border: none;
+}
+
+fieldset legend {
+    width: 100%;
+
+    font-family: var(--fs-title);
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--dark-color);
+
+    text-align: center;
+
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+
+    border-bottom: 1px solid #E6E6F0;
+}
+
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-wrapper input, .select-wrapper select, .feedback-wrapper textarea {
+    background-color: #FAFAFC;
+    height: 55.53px;
+
+    padding: 10px;
+
+    font-family: var(--fs-form);
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 300px;
+}
+
+.feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feedback-wrapper textarea {
+    height: 166.59px;
+}
+
+.checkbox-wrapper {
+    position: relative;
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+
+    opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+    outline: 2px solid black;
+}
+
+.col-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.col-3 .input-wrapper:first-child input {
+    width: 300px;
+    margin-right: 22px;
+}
+
+.col-3 .input-wrapper input {
+    width: 140px;
+}
+
+.button {
+    padding: 12.5px 0;
+    width: 100%;
+
+    background: var(--contrast-color);
+    
+    font-family: var(--fs-title);
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--light-color);
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #f7978c;
+}
