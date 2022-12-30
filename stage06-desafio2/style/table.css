@@ -1,12 +1,14 @@
 .table-wrapper {
     height: 40rem;
-    overflow-y: scroll;
+    overflow: overlay;
+    outline: 1px solid var(--border-table);
+    border-radius: 12px;
 
     margin-bottom: 4rem;
 }
 
 .table-wrapper::-webkit-scrollbar {
-    width: 4px;
+    width: 6px;
 }
   
 .table-wrapper::-webkit-scrollbar-track {
@@ -19,13 +21,15 @@
     border-radius: 10px;
 }
 
+.table-wrapper::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
 table {
     width: 100%;
     text-align: left;
 
-    border-collapse: collapse; 
-    border-radius: 12px;
-    border: 1px solid #4A808C;    
+    border-collapse: collapse;
 
     background-color: #030B0D;
 }
@@ -42,7 +46,8 @@ thead tr th {
 }
 
 tbody tr {
-    border: 1px solid #4A808C;
+    border-top: 1px solid #4A808C;
+    border-bottom: 1px solid #4A808C;
 }
 
 tbody tr:nth-child(even) {
@@ -98,10 +103,16 @@ tbody tr button {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 6rem;
 
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 4rem;
     line-height: 25px;
     color: #4E5455;
+}
+
+.empty svg {
+    width: 13.2rem;
+    height: 12.5rem;
 }
