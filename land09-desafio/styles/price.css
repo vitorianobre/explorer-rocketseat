@@ -1,0 +1,45 @@
+.price-wrapper .select-wrapper {
+    margin-bottom: 3.5rem;
+    padding: 0 4.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-wrapper .select-wrapper .from,
+.price-wrapper .select-wrapper .to {
+    width: 22.6rem;
+    height: 18.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-input-color);
+    border-radius: 10px;
+}
+
+.price-wrapper .select-wrapper .from {
+    margin-right: -15px;
+}
+
+.price-wrapper .select-wrapper .to {
+    margin-left: -15px;
+}
+
+.price-wrapper .info-wrapper {
+    margin-bottom: 5rem;
+    padding: 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.price-wrapper .info-wrapper .info {
+    display: flex;
+    justify-content: space-between;
+}
