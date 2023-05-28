@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinvert - Consultar</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1 id="logo">Coinvert</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">
+            <button>Converter</button>
+        </a>
+        <a href="price.html">
+            <button>Cotação</button>
+        </a>
+        <a href="query.html">
+            <button>Consultar</button>
+        </a>
+    </nav>
+
+    <div id="app">
+        <div class="select-wrapper">
+            <div class="from">
+                <span>Dólar Americano</span>
+                <select name="coin" id="coin-from">
+                    <option value="Peso Argentino">ARS</option>
+                    <option value="Real Brasileiro">BRL</option>
+                    <option value="Bitcoin">BTC</option>
+                    <option value="Dólar Canadense">CAD</option>
+                    <option value="Yuan Chinês">CNY</option>
+                    <option value="Euro">EUR</option>
+                    <option value="Iene Japonês">JPY</option>
+                    <option value="Dólar Americano" selected>USD</option>
+                </select>
+            </div>
+            <div class="arrow-middle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect y="24" width="24" height="24" transform="rotate(-90 0 24)" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_4_172" transform="scale(0.0416667)"/>
+                    </pattern>
+                    <image id="image0_4_172" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAsklEQVR4nO3N0RGCMBBF0U0HayVSAlRkCUIJVkRKwEqkA7xv0AEUSfzPnTl/yb5g/zVBZf/LfviqDCQrA8nKQLIykKwMbLrihhHvJqj1P8cFHb4K2Ku1eWBAgxFqggpQjh4VOrT2UcBejmhmZwxoMGKCCnD0qHBHbfObTXr4K0e07cgD6oTkcRVwlCPaMlJBDahweFylBpQj2jyyLnlc5QwoR7RlJOu4yh1QjmhztWUcV094DTQZXrOedgAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>
+            </div>
+            
+            <div class="to">
+                <span>Real Brasileiro</span>
+                <select name="coin" id="coin-to">
+                    <option value="Peso Argentino">ARS</option>
+                    <option value="Real Brasileiro" selected>BRL</option>
+                    <option value="Bitcoin">BTC</option>
+                    <option value="Dólar Canadense">CAD</option>
+                    <option value="Yuan Chinês">CNY</option>
+                    <option value="Euro">EUR</option>
+                    <option value="Iene Japonês">JPY</option>
+                    <option value="Dólar Americano">USD</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="dates">
+            <div class="from-wrapper">
+                <label for="from-date">De</label>
+                <input type="date" name="from-date" id="from-date">
+            </div>
+            <div class="until-wrapper">
+                <label for="until-date">Até</label>
+                <input type="date" name="until-date" id="until-date">
+            </div>
+        </div>
+        
+        <div class="info-wrapper">
+            <div class="min info">
+                <span>Mínimo</span>
+                <span>-</span>
+            </div>
+        
+            <div class="max info">
+                <span>Máximo</span>
+                <span>-</span>
+            </div>
+        
+            <div class="variation info">
+                <span>Variação</span>
+                <span>-</span>
+            </div>
+        
+            <div class="percentage info">
+                <span>Porcentagem de Variação</span>
+                <span>-</span>
+            </div>
+        </div>
+        
+        <button id="submit" class="btn-search">Confirmar</button>
+    </div>
+
+    <footer><p>Feito com 🖤 por <a href="#">Vitoria Nobre</a></p></footer>
+
+    <script src="./js/query.js"></script>
+</body>
+</html>

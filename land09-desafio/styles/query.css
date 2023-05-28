@@ -1,4 +1,4 @@
-.query-wrapper .select-wrapper {
+.select-wrapper {
     margin-bottom: 4.5rem;
     padding: 0 4.2rem;
 
@@ -7,8 +7,8 @@
     justify-content: space-between;
 }
 
-.query-wrapper .select-wrapper .from,
-.query-wrapper .select-wrapper .to {
+.select-wrapper .from,
+.select-wrapper .to {
     width: 22.6rem;
     height: 13.5rem;
 
@@ -22,15 +22,15 @@
     border-radius: 10px;
 }
 
-.query-wrapper .select-wrapper .from {
+.select-wrapper .from {
     margin-right: -15px;
 }
 
-.query-wrapper .select-wrapper .to {
+.select-wrapper .to {
     margin-left: -15px;
 }
 
-.query-wrapper .dates {
+.dates {
     margin-bottom: 5rem;
 
     display: flex;
@@ -39,7 +39,7 @@
     justify-content: center;
 }
 
-.query-wrapper .dates input {
+.dates input {
     width: 20rem;
     height: 5rem;
 
@@ -50,7 +50,7 @@
     border-radius: 5px;
 }
 
-.query-wrapper .info-wrapper {
+.info-wrapper {
     margin-bottom: 5rem;
     padding: 0 3rem;
 
@@ -59,7 +59,13 @@
     gap: 9px;
 }
 
-.query-wrapper .info-wrapper .info {
+.info-wrapper .info {
     display: flex;
     justify-content: space-between;
+}
+
+nav a:nth-child(3) {
+    padding-bottom: 8px;
+    margin-top: -15px;
+    border-bottom: 2px solid white;
 }

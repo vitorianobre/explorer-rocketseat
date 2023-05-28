@@ -5,10 +5,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coinvert - Converter</title>
+    <title>Coinvert - Cotação</title>
 
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/convert.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/price.css">
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,12 +29,8 @@
     </nav>
 
     <div id="app">
-        <div class="from">
-            <div class="input-wrapper">
-                <label for="value-money">Digite um valor para converter</label>
-                <input type="number" name="value-money" id="value-money">
-            </div>
-            <div class="coin-wrapper">
+        <div class="select-wrapper">
+            <div class="from">
                 <span>Dólar Americano</span>
                 <select name="coin" id="coin-from">
                     <option value="Peso Argentino">ARS</option>
@@ -47,25 +43,20 @@
                     <option value="Dólar Americano" selected>USD</option>
                 </select>
             </div>
-        </div>
     
-        <div class="arrow-middle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="24" height="24" fill="url(#pattern0)"/>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_2_40" transform="scale(0.0416667)"/>
-                </pattern>
-                <image id="image0_2_40" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAsklEQVR4nO3N0RGCMBBF0U0HayVSAlRkCUIJVkRKwEqkA7xv0AEUSfzPnTl/yb5g/zVBZf/LfviqDCQrA8nKQLIykKwMbLrihhHvJqj1P8cFHb4K2Ku1eWBAgxFqggpQjh4VOrT2UcBejmhmZwxoMGKCCnD0qHBHbfObTXr4K0e07cgD6oTkcRVwlCPaMlJBDahweFylBpQj2jyyLnlc5QwoR7RlJOu4yh1QjmhztWUcV094DTQZXrOedgAAAABJRU5ErkJggg=="/>
-                </defs>
-            </svg>
-        </div>
-        
-        <div class="to">
-            <div class="value-wrapper">
-                <span>-</span>
+            <div class="arrow-middle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect y="24" width="24" height="24" transform="rotate(-90 0 24)" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_4_172" transform="scale(0.0416667)"/>
+                    </pattern>
+                    <image id="image0_4_172" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAsklEQVR4nO3N0RGCMBBF0U0HayVSAlRkCUIJVkRKwEqkA7xv0AEUSfzPnTl/yb5g/zVBZf/LfviqDCQrA8nKQLIykKwMbLrihhHvJqj1P8cFHb4K2Ku1eWBAgxFqggpQjh4VOrT2UcBejmhmZwxoMGKCCnD0qHBHbfObTXr4K0e07cgD6oTkcRVwlCPaMlJBDahweFylBpQj2jyyLnlc5QwoR7RlJOu4yh1QjmhztWUcV094DTQZXrOedgAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>                        
             </div>
-            <div class="coin-wrapper">
+            
+            <div class="to">
                 <span>Real Brasileiro</span>
                 <select name="coin" id="coin-to">
                     <option value="Peso Argentino">ARS</option>
@@ -80,16 +71,38 @@
             </div>
         </div>
         
-        <div class="price-wrapper">
-            <span>Cotação</span>
-            <span class="price">-</span>
+        <div class="info-wrapper">
+            <div class="price info">
+                <span>Cotação</span>
+                <span>-</span>
+            </div>
+        
+            <div class="min info">
+                <span>Mínimo</span>
+                <span>-</span>
+            </div>
+        
+            <div class="max info">
+                <span>Máximo</span>
+                <span>-</span>
+            </div>
+        
+            <div class="variation info">
+                <span>Variação</span>
+                <span>-</span>
+            </div>
+        
+            <div class="percentage info">
+                <span>Porcentagem de Variação</span>
+                <span>-</span>
+            </div>
         </div>
         
-        <button id="submit" class="btn-convert">Converter</button>
+        <button id="submit" class="btn-confirm">Confirmar</button>
     </div>
 
     <footer><p>Feito com 🖤 por <a href="#">Vitoria Nobre</a></p></footer>
 
-    <script src="./js/convert.js"></script>
+    <script src="./js/price.js"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
-.convert-wrapper {
+#app {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.convert-wrapper .from {
+.from {
     padding: 2.5rem 3rem 2.5rem 5rem;
     width: 100%;
     height: 14rem;
@@ -17,19 +17,19 @@
     border-radius: 10px;
 }
 
-.convert-wrapper .input-wrapper {
+.input-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.convert-wrapper .input-wrapper label {
+.input-wrapper label {
     font-size: 1.5rem;
     line-height: 1.9rem;
     color: var(--bg-select-color);
 
     margin-bottom: 1rem;
 }
-.convert-wrapper .input-wrapper input {
+.input-wrapper input {
     padding: 5px;
     width: 12rem;
 
@@ -40,7 +40,7 @@
     line-height: 3.1rem;
 }
 
-.convert-wrapper .coin-wrapper {
+.coin-wrapper {
     display: flex;
     gap: 4px;
     flex-direction: column;
@@ -48,7 +48,7 @@
     justify-content: end;
 }
 
-.convert-wrapper .to {
+.to {
     margin-top: -15px;
     margin-bottom: 1rem;
 
@@ -64,21 +64,21 @@
     border-radius: 10px;
 }
 
-.convert-wrapper .value-wrapper {
+.value-wrapper {
     display: flex;
     align-items: center;
 }
 
-.convert-wrapper .value-wrapper span {
+.value-wrapper span {
     font-size: 3rem;
     line-height: 3.8rem;
 }
 
-.convert-wrapper.arrow-middle {
+.arrow-middle {
     margin-top: -15px;
 }
 
-.convert-wrapper .price-wrapper {
+.price-wrapper {
     width: 100%;
     padding: 0 10px;
     margin-bottom: 4rem;
@@ -86,4 +86,10 @@
     display: flex;
     justify-content: space-between;
     line-height: 2rem;
+}
+
+nav a:nth-child(1) {
+    padding-bottom: 8px;
+    margin-top: -15px;
+    border-bottom: 2px solid white;
 }
